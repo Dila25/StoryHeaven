@@ -47,3 +47,17 @@
   padding: 0 55px;
   filter: drop-shadow(3px 3px 5px 2px rgba(54, 54, 155, 0.3));
 }
+@media (max-width: 768px) {
+  .landing_main_topic {
+    font-size: 40px;
+  }
+  .landin_topic_one {
+    font-size: 80px;
+  }
+  .flex_two_landing{
+    display:none;
+  }
+  .landing_content {
+    gap: 15px;
+  }
+}

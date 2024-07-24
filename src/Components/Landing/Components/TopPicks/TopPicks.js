@@ -24,7 +24,7 @@ function TopPicks() {
               <h3 className="picks_card_topic">{pick.title}</h3>
               <div className="subsection">
                 <p className="price_card">{pick.price}</p>
-                <div className="cart_icon_picks">
+                <div className="cart_icon_picks" onClick={()=>(window.location.href='category')}>
                   <IoMdCart className="cart_picks" />
                 </div>
               </div>

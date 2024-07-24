@@ -1,0 +1,90 @@
+.topic_contact {
+  text-align: center;
+  margin: 25px 0 0 0;
+}
+.main_section_contact {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.part_contact {
+  flex: 1;
+  padding: 25px;
+}
+.form_conntact {
+  border: 1px solid #1782ef;
+  padding: 25px;
+  border-radius: 5px;
+}
+.form_lable {
+  font-weight: 500;
+  font-size: 20px;
+}
+.form_input {
+  margin: 4px 0 9px 0;
+  width: 100%;
+  padding: 4px 9px;
+  border-radius: 2px;
+  resize: none;
+  border: 1px solid #1783ef58;
+}
+.requd_mark {
+  color: red;
+  font-weight: bolder;
+}
+.send_btn {
+  background-color: #1782ef;
+  color: white;
+  padding: 5px 30px;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 50px;
+  box-shadow: 5px 3px 5px rgb(30, 11, 55, 0.3);
+  cursor: pointer;
+  cursor: pointer;
+  margin: 0 auto;
+  display: flex;
+  border: 2px solid #1783ef;
+}
+.box_details {
+  margin: 25px 0;
+  border-radius: 5px;
+  border: 1px solid #1783ef;
+}
+.details_content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 25px;
+  margin: 10px 0;
+  justify-content: start;
+}
+.box_details_new {
+  padding: 20px;
+}
+.map_googal {
+  height: 230px;
+  padding: 0;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .part_contact{
+    padding: 0;
+    margin: 8px 0;
+  }
+  .topic_contact{
+    margin: 0;
+    font-size: 25px;
+  }
+  .form_lable{
+    font-size: 17px;
+  }
+  .fullbody{
+    padding: 20px;
+  }
+  .details_content{
+    font-size: 20px;
+  }
+}

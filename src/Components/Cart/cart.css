@@ -1,0 +1,50 @@
+.fullbody {
+    padding: 20px;
+  }
+  
+  .short_topic {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .picks_card_full {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .picks_card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .card_img_picks {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .picks_card_topic {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .subsection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .price_card {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .cart_icon_picks {
+    cursor: pointer;
+  }
+  

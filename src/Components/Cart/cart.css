@@ -1,50 +1,96 @@
-.fullbody {
-    padding: 20px;
+.cart_item {
+  border: 1px solid #1782ef;
+  border-radius: 3px;
+  display: flex;
+  margin: 20px 0;
+  width: 370px;
+  gap: 10px;
+  height: 131px;
+  justify-content: start;
+}
+.cart_image {
+  width: 120px;
+  height: 130px;
+  border-radius: 3px;
+}
+.cart_title {
+  padding: 5px 0;
+  text-transform: uppercase;
+}
+.qunty_card {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+  margin: 5px 0;
+}
+.btn_qunty {
+  background-color: #1782ef;
+  border: 1px solid #1782ef;
+  cursor: pointer;
+  width: 30px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+.count_qtn {
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.dltbtn {
+  background-color: red;
+  border: 1px solid red;
+  cursor: pointer;
+  width: 30px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 0;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+.btn_action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+.tot {
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+}
+.prc {
+  font-weight: bold;
+}
+.card_conn {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cart_total{
+  border: 1px solid #1782ef;
+  padding: 25px;
+  text-align: center;
+}
+.tot_amount{
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .cart_item {
+    width: 350px;
   }
-  
-  .short_topic {
-    font-size: 24px;
-    margin-bottom: 20px;
-  }
-  
-  .picks_card_full {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .picks_card {
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 8px;
-    width: 200px;
-    text-align: center;
-    background-color: #f9f9f9;
-  }
-  
-  .card_img_picks {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-  }
-  
-  .picks_card_topic {
+  .tot {
     font-size: 18px;
-    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
   }
-  
-  .subsection {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .price_card {
-    font-size: 16px;
-    font-weight: bold;
-  }
-  
-  .cart_icon_picks {
-    cursor: pointer;
-  }
-  
+}

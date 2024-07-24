@@ -9,6 +9,7 @@ import AboutUs from "./Components/AboutUs/AboutUs";
 import ContactUs from "./Components/ContactUs/ContactUs";
 import Order from "./Components/Order/Order";
 import OrderSummary from "./Components/Order/OrderSummary";
+import Cart from "./Components/Cart/Cart";
 function App() {
   return (
     <div>
@@ -21,6 +22,7 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />\
           <Route path="/order" element={<Order />} />
           <Route path="/summary" element={<OrderSummary />} />
+          <Route path="/cart" element={<Cart />} />
         </Routes>
       </React.Fragment>
       <Footer />

@@ -13,21 +13,34 @@ const ItemList = [
 ];
 
 function Item() {
+  const addToCart = (item) => {
+    const existingCartItems = JSON.parse(localStorage.getItem("cart")) || [];
+    const itemIndex = existingCartItems.findIndex(cartItem => cartItem.title === item.title);
+
+    if (itemIndex > -1) {
+      // Item already in cart, increase quantity
+      existingCartItems[itemIndex].quantity += 1;
+    } else {
+      // New item, set quantity to 1
+      const itemWithQuantity = { ...item, quantity: 1 };
+      existingCartItems.push(itemWithQuantity);
+    }
+
+    localStorage.setItem("cart", JSON.stringify(existingCartItems));
+    alert(`${item.title} has been added to the cart!`);
+  };
+
   return (
     <div className="fullbody">
       <h1 className="short_topic">Picture Books</h1>
       <div className="picks_card_full">
         {ItemList.map((pick, index) => (
           <div className="picks_card" key={index}>
-            <img
-              src={pick.image}
-              alt={`story${index + 1}`}
-              className="card_img_picks"
-            />
+            <img src={pick.image} alt={`story${index + 1}`} className="card_img_picks" />
             <h3 className="picks_card_topic">{pick.title}</h3>
             <div className="subsection">
               <p className="price_card">{pick.price}</p>
-              <div className="cart_icon_picks">
+              <div className="cart_icon_picks" onClick={() => addToCart(pick)}>
                 <IoMdCart className="cart_picks" />
               </div>
             </div>

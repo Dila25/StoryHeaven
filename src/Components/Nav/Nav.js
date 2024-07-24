@@ -51,7 +51,7 @@ function Nav() {
               <div>
                 <FiShoppingBag
                   className="sub_logo"
-                  onClick={() => (window.location.href = "/order")}
+                  onClick={() => (window.location.href = "/cart")}
                 />
               </div>
               <div>
@@ -66,7 +66,7 @@ function Nav() {
             <div>
               <FiShoppingBag
                 className="sub_logo"
-                onClick={() => (window.location.href = "/order")}
+                onClick={() => (window.location.href = "/cart")}
               />
             </div>
             <div>

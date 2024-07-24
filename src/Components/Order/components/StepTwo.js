@@ -10,9 +10,16 @@ function StepTwo({ nextStep, prevStep }) {
   const handleImageChange = (event) => {
     const file = event.target.files[0];
     if (file) {
-      // Create a URL for the image to be displayed
-      const imageUrl = URL.createObjectURL(file);
-      setPreviewImage(imageUrl);
+      const reader = new FileReader();
+      
+      reader.onloadend = () => {
+        const imageUrl = reader.result;
+        setPreviewImage(imageUrl);
+        // Save image URL to local storage
+        localStorage.setItem("uploadedImage", imageUrl);
+      };
+
+      reader.readAsDataURL(file); // Convert file to data URL
     }
   };
 

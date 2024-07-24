@@ -1,0 +1,47 @@
+.order-summary-heading {
+  text-align: center;
+}
+.order-summary-container{
+  border: 1px solid #1782ef;
+  padding: 10px;
+  margin: 20px;
+}
+.order-summary-section {
+  border: 1px solid #1782ef;
+  padding: 10px;
+  width: 400px;
+  height: 270px;
+  border-radius: 8px;
+  display: flex;
+  margin: 25px 0;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.order_dtl {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.newone_sum{
+    text-align: center;
+}
+.uploaded-image{
+    width:200px;
+    text-align: center;
+    margin: 0 auto;
+    height: 200px;
+}
+.section-heading{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.personal-info{
+    font-size: 18px;
+    margin: 5px 0;
+}
+.bank-info{
+    font-size: 20px;
+    margin: 5px 0;
+}

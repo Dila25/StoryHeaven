@@ -1,6 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
+import "./step.css"; // Make sure to include your styling
 
 function StepBank({ nextStep, prevStep }) {
+  // State to manage form inputs
+  const [formData, setFormData] = useState({
+    cardname: "",
+    cardnum: "",
+    date: "",
+    cvv: ""
+  });
+
+  // Handle input changes
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  // Handle form submission
+  const handleSubmit = () => {
+    // Save form data to local storage
+    localStorage.setItem("bankInfo", JSON.stringify(formData));
+    // Move to next step
+    nextStep();
+  };
+
   return (
     <div>
       <div className="step-content">
@@ -14,6 +37,8 @@ function StepBank({ nextStep, prevStep }) {
               className="order-input"
               type="text"
               name="cardname"
+              value={formData.cardname}
+              onChange={handleChange}
               required
             />
 
@@ -24,18 +49,22 @@ function StepBank({ nextStep, prevStep }) {
               className="order-input"
               type="text"
               name="cardnum"
+              value={formData.cardnum}
+              onChange={handleChange}
               required
             />
+
             <div className="cadinpu_container">
               <div>
                 <label className="form_lable">
                   Exp Date <span className="requd_mark">*</span>
                 </label>
-
                 <input
                   className="order-input"
                   type="date"
                   name="date"
+                  value={formData.date}
+                  onChange={handleChange}
                   required
                 />
               </div>
@@ -47,10 +76,13 @@ function StepBank({ nextStep, prevStep }) {
                   className="order-input"
                   type="text"
                   name="cvv"
+                  value={formData.cvv}
+                  onChange={handleChange}
                   required
                 />
               </div>
             </div>
+
             <div className="button-container">
               <button
                 type="button"
@@ -62,7 +94,7 @@ function StepBank({ nextStep, prevStep }) {
               <button
                 className="send_btn_order"
                 type="button"
-                onClick={nextStep}
+                onClick={handleSubmit}
               >
                 Next
               </button>

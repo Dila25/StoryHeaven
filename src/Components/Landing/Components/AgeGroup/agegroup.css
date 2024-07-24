@@ -1,0 +1,34 @@
+.age_section {
+  padding: 10px 8%;
+}
+
+.age_topic {
+  text-align: center;
+  font-size: 35px;
+}
+.age_sub_topic{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 25px 0;
+}
+.age_card_full{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.age_card {
+    padding: 10px;
+    border-radius: 8px;
+    height: 300px;
+    width: 270px;
+    margin: 25px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0px 8px 30px rgba(23, 130, 239, 0.3);
+}
+.age_card:hover {
+  transform: scale(1.05); /* Adjust the scale as needed */
+  box-shadow: 0px 12px 40px rgba(23, 130, 239, 0.4); /* Slightly larger shadow on hover */
+}

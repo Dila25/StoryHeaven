@@ -1,0 +1,59 @@
+.picks_section {
+  padding: 10px 8%;
+}
+.picks_card_full {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.picks_card_topic {
+  text-align: center;
+  margin: 5px 0;
+  font-size: 25px;
+}
+.subsection {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 0 8px 8px 8px;
+}
+.price_card {
+  font-weight: 600;
+  font-size: 20px;
+  color: red;
+}
+.picks_card {
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.picks_card:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cart_icon_picks {
+  background-color: #1782ef;
+  color: white;
+  border-radius: 50%;
+  font-size: 30px;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  padding: 5px;
+}
+.cart_icon_picks:hover {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+.card_img_picks{
+  border-radius: 9px 9px 0 0;
+}
+.story_topic{
+  text-align: center;
+  margin: 20px 0;
+}

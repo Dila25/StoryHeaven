@@ -153,4 +153,7 @@
     gap: 0;
     flex-direction: column;
   }
+  .success-icon{
+    width: 100%;
+  }
 }

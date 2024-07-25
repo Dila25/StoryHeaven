@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./cart.css"; // Make sure you have some basic styling
 import { MdDelete } from "react-icons/md";
+import CartEmpty from "./img/emty.png";
 function Cart() {
   const [cartItems, setCartItems] = useState([]);
 
@@ -51,7 +52,10 @@ function Cart() {
           <div>
             <div>
               {cartItems.length === 0 ? (
-                <p>Your cart is empty</p>
+                <div className="emmtydiv">
+                  <img src={CartEmpty} alt="emtyy img" className="emtycart"/>
+                  <p>Your cart is empty</p>
+                </div>
               ) : (
                 <div className="card_conn">
                   <div className="card_details">
@@ -109,7 +113,12 @@ function Cart() {
                     <h2 className="tot_amount">
                       Total Amount: LKR {calculateTotal()}
                     </h2>
-                    <button className="send_btn" onClick={()=>(window.location.href='order')}>PROCEED TO CHECKOUT</button>
+                    <button
+                      className="send_btn"
+                      onClick={() => (window.location.href = "order")}
+                    >
+                      PROCEED TO CHECKOUT
+                    </button>
                   </div>
                 </div>
               )}

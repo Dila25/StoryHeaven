@@ -111,4 +111,7 @@
   .emmtydiv{
     width: 100%;
   }
+  .order-summary-container{
+    margin: 0 0 10px 0;
+  }
 }
